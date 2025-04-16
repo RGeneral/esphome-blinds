@@ -6,15 +6,15 @@ TLDR; Add this to your ESPHome device configuration:
 
 ```yaml
 substitutions:
-  stepper_dir_pin_inverted: 'false'
-  stepper_dir_pin: D6
-  stepper_step_pin: D7
-  stepper_enable_pin: D5
+  esp_pin_a: D1
+  esp_pin_b: D2
+  esp_pin_c: D3
+  esp_pin_d: D4
   stepper_max_speed: '250'
   stepper_endstop: '650'
 
 packages:
-  blinds: github://tronikos/esphome-blinds/esphome-blinds.yaml@main
+  blinds: github://RGeneral/esphome-blinds/esphome-blinds.yaml@main
 
 esp8266:
   board: d1_mini
@@ -51,31 +51,31 @@ esp8266:
 
 ```yaml
 substitutions:
-  stepper_dir_pin_inverted: 'false'
-  stepper_dir_pin: D6
-  stepper_step_pin: D7
-  stepper_enable_pin: D5
+  esp_pin_a: D1
+  esp_pin_b: D2
+  esp_pin_c: D3
+  esp_pin_d: D4
   stepper_max_speed: '250'
   stepper_endstop: '650'
 
 packages:
-  blinds: github://tronikos/esphome-blinds/esphome-blinds.yaml@main
+  blinds: github://RGeneral/esphome-blinds/esphome-blinds.yaml@main
 ```
 
-7. Change the values in the `substitutions` section based on your setting, e.g. if you have used different pins. The `stepper_endstop: '650'` for my blinds corresponds to the blinds being open, i.e. parallel to the ground `-`. For some of my blinds I have `stepper_dir_pin_inverted` set to `false` while for others I have `true` depending on how I like them in closed position, i.e. `/` or `\`.
+7. Change the values in the `substitutions` section based on your setting, e.g. if you have used different pins. The `stepper_endstop: '650'` for my blinds corresponds to the blinds being open, i.e. parallel to the ground `-`. 
 8. Your configuration should now look something like the following:
 
 ```yaml
 substitutions:
-  stepper_dir_pin_inverted: 'false'
-  stepper_dir_pin: D6
-  stepper_step_pin: D7
-  stepper_enable_pin: D5
+  esp_pin_a: D1
+  esp_pin_b: D2
+  esp_pin_c: D3
+  esp_pin_d: D4
   stepper_max_speed: '250'
   stepper_endstop: '650'
 
 packages:
-  blinds: github://tronikos/esphome-blinds/esphome-blinds.yaml@main
+  blinds: github://RGeneral/esphome-blinds/esphome-blinds.yaml@main
 
 esphome:
   name: kitchen-blinds
