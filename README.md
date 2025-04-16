@@ -27,18 +27,6 @@ esp8266:
   restore_from_flash: true
 ```
 
-## Hardware installation
-
-Follow this video guide by The Hook Up but skip their software installation:
-
-[![Motorize and Automate your Blinds for $10! (WiFi)](https://img.youtube.com/vi/1O_1gUFumQM/0.jpg)](https://www.youtube.com/watch?v=1O_1gUFumQM)
-
-Wiring diagram (from https://github.com/thehookup/Motorized_MQTT_Blinds):
-
-![Schematic](https://github.com/tronikos/esphome-blinds/assets/9987465/b3f5dcb2-1fac-4226-9320-2a7b9b56e135)
-
-*Don't forget to cut the center trace on the stepper motor as shown in the youtube video.*
-
 ## Software installation
 
 1. Setup **ESPHome**, if you don't have it already, by following [Getting Started with ESPHome and Home Assistant](https://esphome.io/guides/getting_started_hassio.html).
