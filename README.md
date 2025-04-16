@@ -133,11 +133,11 @@ If you want to 3D print this project, go to Thingiverse to download the STLs her
 
 Here's the xblinds unit assembled: (You can safely desolder the LED's on the ULN2003 stepper driver if you should want to).
 
-![3D-print](images/xblinds-open.jpg)
+![3D-print](https://github.com/kp-bit/xblinds/raw/main/images/xblinds-open.jpg)
 
 And this is what it looks like mounted on the wall:
 
-![Mounted](images/xblinds-mounted.jpg)
+![Mounted](https://github.com/kp-bit/xblinds/raw/main/images/xblinds-mounted.jpg)
 
 
 ### Bill of Materials
@@ -170,5 +170,5 @@ Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.<br/>
 
 ### Wiring diagram
 
-![Wiring](images/diagram.jpg)
+![Wiring](https://github.com/kp-bit/xblinds/raw/main/images/diagram.jpg)
 
