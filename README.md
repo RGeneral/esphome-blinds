@@ -1,3 +1,9 @@
+# xBlinds
+
+The xBlinds project started because I wanted a (cheap) way to motorize my vertical blinds and existing commercial solutions are heavily priced and not getting the best reviews, so a wintery night I started sketching the UI in Notepad.
+
+This project is two-fold; the bin and guide published here and the STL for the casing on Thingiverse https://www.thingiverse.com/thing:4792584.
+
 # esphome-blinds [![Made for ESPHome](https://img.shields.io/badge/Made_for-ESPHome-black?logo=esphome)](https://esphome.io)
 
 This [ESPHome](https://esphome.io) package allows control of blinds using a stepper motor.
@@ -116,3 +122,53 @@ captive_portal:
 12. Select **Open ESPHome Web**, **Connect**, **Install downloaded project**.
 13. In the **Install your existing ESPHome project** page select **Choose File**, select the previously downloaded bin file, and select **Install**.
 14. Home Assistant should auto-discover your new device.
+### Toogle button
+
+Version 0.5 adds support for a tactile button to toggle open/close directly on the xBlinds unit. It will require printing a new lid (available on Thingiverse) for the unit and it's completely optional.
+
+
+### Thingiverse
+
+If you want to 3D print this project, go to Thingiverse to download the STLs here: https://www.thingiverse.com/thing:4792584
+
+Here's the xblinds unit assembled: (You can safely desolder the LED's on the ULN2003 stepper driver if you should want to).
+
+![3D-print](images/xblinds-open.jpg)
+
+And this is what it looks like mounted on the wall:
+
+![Mounted](images/xblinds-mounted.jpg)
+
+
+### Bill of Materials
+
+#### Steppers and drivers:
+ANGEEK 5 pcs. 5V 28BYJ-48 ULN2003 Stepper Motor with Drive Module Board
+
+* Amazon affiliate link: https://amzn.to/4bvPhqd
+
+
+#### D1 mini:
+AZDelivery D1 Mini NodeMcu with ESP8266-12F WLAN Module
+
+> Note!
+> Different manufacturers have different dimensions.
+
+* Amazon affiliate link: https://amzn.to/49CFDQR
+* AZDelivery: https://www.az-delivery.de/products/d1-mini
+
+#### Tactile Button:
+Tactile Push Button Switch 6x6x4.3 (6x6x5 should be fine as well)<br/>
+10 kOhm pull-down resistor
+
+* Amazon affiliate link: https://amzn.to/49eNN1K
+
+#### Power supply:
+Any 5V PSU will do, I've calculated ~2A per unit to be on the safe side.<br/>
+**Do not use USB to power the D1 and stepper, the 5V pin will not deliver sufficient current to drive the stepper**
+
+
+### Wiring diagram
+
+![Wiring](images/diagram.jpg)
+
