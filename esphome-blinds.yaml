@@ -1,8 +1,8 @@
 substitutions:
-  stepper_dir_pin_inverted: 'false'
-  stepper_dir_pin: D6
-  stepper_step_pin: D7
-  stepper_enable_pin: D5
+  esp_pin_a: D1
+  esp_pin_b: D2
+  esp_pin_c: D3
+  esp_pin_d: D4
   stepper_max_speed: '250'
   stepper_endstop: '650'
 
@@ -19,15 +19,12 @@ esphome:
             target: !lambda return int($stepper_endstop * id(blinds_cover).position);
 
 stepper:
-  - platform: a4988
+  - platform: uln2003
     id: stepper_motor
-    step_pin: $stepper_step_pin
-    dir_pin: 
-      number: $stepper_dir_pin
-      inverted: $stepper_dir_pin_inverted
-    sleep_pin: 
-      number: $stepper_enable_pin
-      inverted: true  # using enable pin
+    pin_a: $esp_pin_a
+    pin_b: $esp_pin_b
+    pin_c: $esp_pin_c
+    pin_d: $esp_pin_d
     max_speed: $stepper_max_speed
 
 cover:
