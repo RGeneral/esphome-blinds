@@ -26,7 +26,7 @@ stepper:
     pin_c: $esp_pin_c
     pin_d: $esp_pin_d
     max_speed: $stepper_max_speed
-    sleep_when_done: true
+    sleep_when_done: yes
     
 
 cover:
